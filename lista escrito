@@ -1,0 +1,10 @@
+next lista_t* es un puntero de x64, tiene 64 bits - offset 0
+sum uint32_t como su nombre indica es de 32 bits -offset 8bytes/64bits
+size uint64_t es de 64 bits - offset 16bytes/128bits
+array uint34_t* es puntero de 64 bits - offset 24bytes/256bits
+
+Solo necesitamos padding entre next y sum, de 32 bits
+
+Tiene un tamaño total de 32 bytes
+
+La alineacion debe ser de 8 bytes ya que sus miembros mas grandes ocupan esa cantidad de memoria
